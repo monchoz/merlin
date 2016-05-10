@@ -111,3 +111,29 @@ hr {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+/* #Blue Flat Button
+==================================================*/
+.blue-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #2C82C9;
+  border: 0;
+  border-bottom: 2px solid #2969B0;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #2969B0;
+  box-shadow: inset 0 -2px #2969B0;
+}
+.blue-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
