@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <form>
-        <input id="newTask" onkeypress="showAddButton()" onkeyup="showAddButton()" class="input" type="text" />
+        <input id="newTask" onkeyup = "if(event.keyCode == 13) addTask()" onkeypress="showAddButton()" onkeyup="showAddButton()" class="input" type="text" />
         <button id="btnAdd" onclick="addTask()" type="button" class='task-time-button blue-flat-button'>Add</button>
-    </form>
+    
     <hr>
     <section>
       <table id="tasks-table">
