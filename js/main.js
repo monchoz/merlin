@@ -85,10 +85,16 @@ function startTask(){
             $(this).removeClass("green-flat-button");
             $(this).addClass("red-flat-button");
             $(this).text("Stop");
+            
+            var $row = $(this).closest("tr"),        // Finds the closest row <tr>
+            $tds = $row.find("td:nth-child(3)");
+            clearVariables();
+            startTimer($($tds));
             start = true;
         }else{
             $(this).addClass("green-flat-button");
             $(this).removeClass("red-flat-button");
+            stopTimer();
             $(this).text("Start");
             start = false;
         }
