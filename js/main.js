@@ -13,15 +13,13 @@ function showAddButton() {
     }
 }
 
-function  addTask() {
-    createTask(localStorage.length,$("#newTask").val());  
+function addTask() {
+    createTask(localStorage.length,$("#newTask").val());
     localStorage.setItem(localStorage.length,$("#newTask").val());
-    
-    
 }
 
 function loadTasks(){
-    for (x=0; x<=localStorage.length-1; x++)  {  
+    for (x=0; x<=localStorage.length-1; x++)  {
         key = localStorage.key(x);
         value = localStorage[key];
         createTask(key,localStorage[key]);
@@ -29,7 +27,7 @@ function loadTasks(){
 }
 
 function createTask(key,task){
-    var taskStructure = 
+    var taskStructure =
     "<tr>"+
     "<td width='10%'> "+
     "<a href='#' class='checkbox'> "+
@@ -46,8 +44,10 @@ function createTask(key,task){
     "<td width='25%' align='center'>"+
     "<button type='button' class='task-time-button green-flat-button'>Start</button>"+
     "</td>"+
-    "</tr>";   
+    "</tr>";
     $("#tasks-table").append(taskStructure);
+    $("#newTask").val('');
+    $("#newTask").focus();
 }
 
 function clearTasks(){
