@@ -41,10 +41,14 @@ function createTask(key,task){
     "<td width='25%' align='center'>"+
     "<span class='task-time'>00:00:00</span>"+
     "</td>"+
-    "<td width='25%' align='center'>"+
+    "<td width='15%' align='center'>"+
     "<button type='button' class='task-time-button green-flat-button'>Start</button>"+
     "</td>"+
+    "<td width='10%' align='center'>"+
+    "<i class='fa fa-close inactive' title='Delete'></i>"+
+    "</td>"+
     "</tr>";
+
     $("#tasks-table").append(taskStructure);
     $("#newTask").val('');
     $("#newTask").focus();

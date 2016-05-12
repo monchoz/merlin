@@ -59,6 +59,22 @@ hr {
   color: #777;
 }
 
+/* Colors
+==================================================*/
+
+.inactive {
+  color: #ecf0f1;
+}
+
+.inactive:hover {
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+.red {
+  color: #e74c3c;
+}
+
 
 /* #Red Flat Button
 ==================================================*/
